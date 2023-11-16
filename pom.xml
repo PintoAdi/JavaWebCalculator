@@ -7,7 +7,6 @@
   <version>0.1</version>
   <name>WebAppCal Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,36 +14,18 @@
       <version>4.8.2</version>
       <scope>test</scope>
     </dependency>
-    
     <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>2.5</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.3.2</version> <!-- or the latest version -->
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
-  <distributionManagement>
-    <repository>
-      <id>releases</id>
-      <!-- Uncomment the appropriate URL for your deployment -->
-      <!-- <url>http://52.204.135.48:8081/nexus/content/repositories/releases</url> -->
-      <url>http://binary.ibm.com/nexus/content/repositories/releases</url>
-    </repository>
-  </distributionManagement>
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>2.5</version>
+</dependency>
+</dependencies>
+<distributionManagement>
+  <repository>
+    <id>releases</id>
+    <!-- <url>http://52.204.135.48:8081/nexus/content/repositories/releases</url> -->    
+    <url>http://binary.ibm.com/nexus/content/repositories/releases</url>
+  </repository>
+</distributionManagement>
 </project>
